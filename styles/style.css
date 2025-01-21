@@ -7,6 +7,12 @@
     margin: 0;
     padding: 0;
 }
+.hr{
+    display: none;
+}
+.fa-bar{
+    display: none;
+}
 .display-flex{
     display: flex;
 }
@@ -255,6 +261,7 @@ nav .a4{
     position: absolute;
     top: 56%;
     left: 38px;
+    cursor: pointer;
 }
 /* ----small-stories-cards-------- */
 .small-stories-card{
@@ -289,6 +296,10 @@ nav .a4{
     position: absolute;
     top: 53%;
     left: 38px;
+    cursor: pointer;
+}
+.small-card-btn2{
+    background-color: #5D58F0;
 }
 .small-card-title{
     margin-left: 38px;
@@ -341,7 +352,9 @@ nav .a4{
     
 }
 .logo-2{
-    margin-bottom: 36px;
+    margin-top: 12px;
+    width: 82px;
+    height: 82px;
 }
 .kids-education{
     margin-left: 10px;
@@ -378,7 +391,7 @@ nav .a4{
     color: white;
     font-weight: bold;
     font-size: 1.625rem;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 }
 .icon-div{
     gap: 10px;
@@ -386,4 +399,78 @@ nav .a4{
 .footer-column-3 img{
     width: 40px;
     height: 40px;
+}
+
+/* ---------media query for small devices---------- */
+
+@media screen and (max-width:576px) {
+    .nav-btn, .nav-links, .school{
+        display: none;
+    }
+    .hr{
+        display: block;
+        color: orange;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .stories-card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .big-stories-card{
+        display: none;
+    }
+    .stories-card{
+        width: 100%;
+        margin: 80px auto;
+        justify-content: space-between;
+    
+    }
+    .small-stories-card{
+        width: 100%;
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .small-card{
+        width: 100%;
+    }
+    .main-footer{
+        flex-direction: column;
+        height: 100%;
+        align-items: flex-start; 
+    }
+    .footer{
+        height:100%;
+    }
+    .footer-column-1{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .small-card-btn{
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 6px 11px 6px 11px;
+        color: white;
+        /* background-color: #95B226; */
+        border: none;
+        border-radius: 48px;
+        position: absolute;
+        top: 53%;
+        left: 18px;
+        cursor: pointer;
+    }
+    .fa-bar{
+        display: block;
+
+    }
+    .fa{
+        font-size: 2rem;
+    }
 }
