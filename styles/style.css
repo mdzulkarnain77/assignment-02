@@ -48,6 +48,12 @@ nav .a4{
     background-color: #FEA301;
     border: none;
     font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-btn:hover{
+    color: green;
+    background-color: purple;
 }
 
 /* ------------Banner-section--------- */
@@ -80,6 +86,12 @@ nav .a4{
     background-color: black;
     border: none;
     font-weight: bold;
+    transition: 0.5s;
+}
+.banner-btn:hover{
+    color: purple;
+    background-color: green;
+
 }
 .hero-kids{
     width: 100%;
@@ -110,7 +122,19 @@ nav .a4{
     box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.05);
     margin-bottom: 80px;
     background: linear-gradient(to bottom, rgba(238, 225, 255,1), rgba(255, 255, 255,1) 40%);
-
+    transition: 1s;
+}
+.card2{
+    background: linear-gradient(to bottom, rgba(255, 244, 220, 1), rgba(255, 255, 255,1) 40%);
+}
+.card-1{
+    background: linear-gradient(to bottom, rgba(222, 245, 255, 1), rgba(255, 255, 255,1) 40%);
+}
+.card1:hover{
+    width: 385px;
+    height: 490px;
+    background: linear-gradient(to top, rgba(238, 225, 255,1), rgba(255, 255, 255,1) 40%);
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.05);
 }
 .curriculum-image{
     margin-top: 52px;
@@ -141,13 +165,17 @@ nav .a4{
     justify-content: center;
 }
 .card-button{
-    /* display: inline-block;
-    text-align: center; */
+    font-size: 1rem;
+    font-weight: 700;
     color: #64C8FF;
     text-decoration: none;
     border: none;
     background: inherit;
     padding: 5px 25px 5px 0px;
+    transition: 0.5s;
+}
+.card-button:hover{
+    font-size: 1.25rem;
 }
 .card-button2{
     color: #F0AA00;
@@ -189,6 +217,7 @@ nav .a4{
     border-radius: 16px;
     background-color: white;
     margin-right: 15px;
+    overflow: hidden;
 }
 .big-stories-card img{
     width: 100%;
