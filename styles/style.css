@@ -16,6 +16,14 @@
 .display-flex{
     display: flex;
 }
+/* -------marquee-tag------ */
+marquee{
+    background-color: lightblue;
+    color: purple;
+    border: 2px solid red;
+    display: inline-block;
+    font-weight: 900;
+}
 /* nav styles */
 nav{
     width: 80%;
